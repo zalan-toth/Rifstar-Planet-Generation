@@ -1,0 +1,22 @@
+{
+    "name": "Dense",
+    "rarity": 1,
+    "color": "#ffffff",
+    "landBiomeZoom": 2,
+    "biomeImplosionRatio": 0.2,
+    "landBiomes": [
+        "dense/dense-plain",
+        "dense/dense-dunes"
+    ],
+    "entitySpawners": [
+        "hot/land-passive",
+        "hot/land-hostile",
+        "hot/land-cave"
+    ],
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 1,
+    "shoreBiomes": [
+        "dense/dense-beach"
+    ],
+    "seaBiomes": ["dense/dense-river"]
+}

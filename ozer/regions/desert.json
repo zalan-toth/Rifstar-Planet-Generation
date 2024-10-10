@@ -1,0 +1,42 @@
+{
+    "name": "Desert",
+    "rarity": 1,
+    "color": "#fffa66",
+    "landBiomeZoom": 2,
+    "biomeImplosionRatio": 0.2,
+    "landBiomes": [
+        "desert/desert-plain",
+        "desert/desert-dunes"
+    ],
+    "entitySpawners": [
+        "hot/land-passive",
+        "hot/land-hostile",
+        "hot/land-cave"
+    ],
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 1,
+    "shoreBiomes": [
+        "desert/desert-sand-beach",
+        "desert/desert-beach"
+    ],
+    "seaBiomes": ["desert/desert-river"],
+    "objects": [{
+        "trees": [{
+            "anySize": true,
+            "treeTypes": [
+                "SMALL_JUNGLE",
+                "JUNGLE"
+            ],
+            "sizes": [{
+                "depth": 1,
+                "width": 1
+            }]
+        }],
+        "place": [
+            "trees/jungle/palm3",
+            "trees/jungle/palm4",
+            "trees/jungle/palm6"
+        ],
+        "chance": 0
+    }]
+}

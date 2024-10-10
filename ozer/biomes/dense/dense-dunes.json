@@ -1,0 +1,52 @@
+{
+    "name": "Dense dunes",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "dense_dunes",
+        "foliageColor": "#ffffff",
+        "waterColor": "#ffffff",
+        "waterFogColor": "#ffffff",
+        "fogColor": "#fff93e",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "dunes",
+        "max": 3,
+        "min": 30
+    }],
+    "layers": [
+        {
+            "minHeight": 10,
+            "maxHeight": 12,
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:white_concrete_powder"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:black_concrete_powder"
+                }
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
+                "maximumSlope": 20
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.002,
+        "palette": [{"block": "minecraft:dead_bush"}]
+    }]
+}

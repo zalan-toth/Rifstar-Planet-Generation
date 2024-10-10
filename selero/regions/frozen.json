@@ -1,0 +1,13 @@
+{
+    "name": "Frozen",
+    "color": "#44C3D1",
+    "rarity": 1,
+    "landBiomes": [
+        "frozen/ice-desert"
+    ],
+
+    "riverRarity": 0,
+    "landBiomeZoom": 5,
+    "riverThickness": 0.006
+
+}

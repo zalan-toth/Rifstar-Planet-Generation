@@ -1,0 +1,127 @@
+{
+    "name": "Dense oasis",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "dense_oasis",
+        "foliageColor": "#6ec52b",
+        "waterColor": "#ffffff",
+        "waterFogColor": "#ffffff",
+        "fogColor": "#fff93e",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 3,
+        "min": -8
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{
+                "weight": 2,
+                "block": "minecraft:orange_concrete_powder"
+            }]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
+                "maximumSlope": 20
+            },
+            "palette": [{"block": "minecraft:sandstone"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:magma_block",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:sand",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:sandstone",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:sand",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.4,
+        "palette": [{"block": "minecraft:grass"}]
+    }],
+    "objects": [
+        {
+            "place": [
+                "ozer/trees/rubbertree1",
+                "ozer/trees/rubbertree2",
+                "ozer/trees/rubbertree3",
+                "ozer/trees/rubbertree4",
+                "ozer/trees/rubbertree5"
+            ],
+            "chance": 1,
+            "density": 3,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "place": [
+                "ozer/trees/rubbertree6",
+                "ozer/trees/rubbertree7",
+                "ozer/trees/rubbertree8",
+                "ozer/trees/rubbertree9",
+                "ozer/trees/rubbertree10",
+                "ozer/trees/rubbertree11"
+            ],
+            "chance": 1,
+            "density": 3,
+            "translate": {"y": 1},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

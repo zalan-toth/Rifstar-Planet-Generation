@@ -1,0 +1,34 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_9",
+        "horizontalScale": 4
+    },
+    "seed": 6575675,
+    "composite": [{
+        "style": {
+            "style": "GLOB",
+            "zoom": 0.4,
+            "exponent": 0.7,
+            "fracture": {
+                "style": "SIMPLEX",
+                "zoom": 0.1,
+                "multiplier": 5,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            }
+        },
+        "negative": true,
+        "seed": 6575675
+    }],
+    "cliffHeightMax": 80,
+    "cliffHeightMin": 10,
+    "cliffHeightGenerator": {
+        "seed": 2348,
+        "opacity": 0.8,
+        "exponent": 1.125,
+        "style": {"style": "FRACTAL_SMOKE"},
+        "zoom": 1.4
+    }
+}

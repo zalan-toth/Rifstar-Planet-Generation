@@ -1,0 +1,16 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_9",
+        "horizontalScale": 48
+    },
+    "seed": 530,
+    "composite": [{
+        "seed": 530,
+        "style": {
+            "style": "SEXOCTAVE_FRACTAL_RM_SIMPLEX",
+            "zoom": 2.4,
+            "exponent": 1.8
+        },
+        "negative": true
+    }]
+}

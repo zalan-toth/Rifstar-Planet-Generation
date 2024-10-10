@@ -1,0 +1,62 @@
+{
+    "name": "Dense plains",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "dense_plains",
+        "foliageColor": "#6ec52b",
+        "waterColor": "#ffffff",
+        "waterFogColor": "#ffffff",
+        "fogColor": "#fff93e",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 8,
+        "min": 5
+    }],
+    "childStyle": {
+        "style": "SIMPLEX",
+        "zoom": 5,
+        "exponent": 3,
+        "fracture": {
+            "style": "STATIC",
+            "multiplier": 10
+        }
+    },
+    "children": ["dense/dense-oasis"],
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
+                "maximumSlope": 20
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:yellow_concrete"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:yellow_concrete"
+                }
+            ]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.002,
+        "palette": [{"block": "minecraft:dead_bush"}]
+    }]
+}

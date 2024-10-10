@@ -1,0 +1,58 @@
+{
+    "vanillaDerivative": "DESERT_LAKES",
+    "name": "Dense river",
+    "customDerivitives": [{
+        "id": "dense_lake",
+        "foliageColor": "#6ec52b",
+        "waterColor": "#ffffff",
+        "waterFogColor": "#ffffff",
+        "fogColor": "#fff93e",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "layers": [
+        {
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "block": "minecraft:black_concrete",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:magma_block",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:black_concrete"},
+                {"block": "minecraft:gray_concrete"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:white_concrete"
+                }
+            ]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.1,
+        "variance": {"style": "STATIC"},
+        "zoom": 2,
+        "stackMax": 5,
+        "stackMin": 1,
+        "palette": [{"block": "minecraft:calcite"}],
+        "style": {"style": "STATIC"}
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": -7,
+        "min": -13
+    }],
+    "derivative": "DESERT_LAKES"
+}

@@ -1,0 +1,23 @@
+{
+    "landBiomes": ["mountain/mountain"],
+    "color": "#a0a6a2",
+    "biomeImplosionRatio": 0.25,
+    "seaBiomes": ["mountain/mountain-river"],
+    "landBiomeZoom": 5,
+    "shoreHeightMin": 2.2,
+    "shoreBiomes": ["mountain/mountain-beach"],
+    "name": "Mountains",
+    "shoreHeightMax": 1.2,
+    "shoreHeightZoom": 1.14,
+    "carving": {"caves": [{
+        "breakSurface": true,
+        "cave": "mountain/main",
+        "rarity": 14,
+        "caveStartHeight": {
+            "max": 190,
+            "min": 90,
+            "style": {"style": "STATIC"}
+        }
+    }]},
+    "rarity": 2
+}

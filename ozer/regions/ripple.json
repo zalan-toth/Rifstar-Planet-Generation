@@ -1,0 +1,21 @@
+{
+    "name": "Ripple",
+    "rarity": 1,
+    "color": "#c90076",
+    "landBiomeZoom": 2,
+    "biomeImplosionRatio": 0.2,
+    "landBiomes": [
+        "ripple/ripple-forest"
+    ],
+    "entitySpawners": [
+        "hot/land-passive",
+        "hot/land-hostile",
+        "hot/land-cave"
+    ],
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 1,
+    "shoreBiomes": [
+        "ripple/ripple-beach"
+    ],
+    "seaBiomes": ["ripple/ripple-river"]
+}

@@ -1,0 +1,113 @@
+{
+    "vanillaDerivative": "DESERT",
+    "name": "Desert beach",
+    "customDerivitives": [{
+        "id": "dense_beach",
+        "foliageColor": "#6ec52b",
+        "waterColor": "#ffffff",
+        "waterFogColor": "#ffffff",
+        "fogColor": "#fff93e",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "layers": [
+        {
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.4,
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "minecraft:black_concrete",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:orange_concrete",
+                    "weight": 4
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:orange_concrete"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 3,
+        "generator": "smooth-land"
+    }],
+    "derivative": "JUNGLE",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:smooth_sandstone"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:smooth_sandstone"}
+        ]
+    },
+    "decorators": [
+        {
+            "partOf": "SHORE_LINE",
+            "chance": 0.18,
+            "stackMax": 2,
+            "stackMin": 1,
+            "heightVariance": {"style": "STATIC"},
+            "palette": [{"block": "minecraft:calcite"}]
+        },
+        {
+            "chance": 0.001,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "ozer/trees/rubbertree6",
+                "ozer/trees/rubbertree7",
+                "ozer/trees/rubbertree8",
+                "ozer/trees/rubbertree9",
+                "ozer/trees/rubbertree10",
+                "ozer/trees/rubbertree11"
+            ],
+            "chance": 1,
+            "density": 3,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "place": [
+                "ozer/trees/rubbertree1",
+                "ozer/trees/rubbertree2",
+                "ozer/trees/rubbertree3",
+                "ozer/trees/rubbertree4",
+                "ozer/trees/rubbertree5"
+            ],
+            "chance": 1,
+            "density": 3,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}
